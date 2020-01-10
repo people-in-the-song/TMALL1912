@@ -1,0 +1,356 @@
+@charset "utf-8";
+@import "compass/reset";
+$page_width:1230px;
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing:border-box;
+    text-decoration: none;
+}
+//头部
+#top{
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    background: #fe0036;
+}
+#top header{
+    width: $page_width;
+    height: 80px;
+    margin: 0 auto;
+    background: #ccc;
+}
+//登录注册
+#login{
+    width: 100%;
+    height: 41px;
+    background: #d91e1c;
+    font-size: 12px;
+    color: #fff;
+    line-height: 26px;
+}
+#login .BG{
+    width: $page_width;
+    height: 41px;
+    margin: 0 auto;
+}
+#login .left{
+    float: left;
+}
+#login .left a{
+    color: #fff;
+    margin-left: 20px;
+}
+//导航栏
+#login .right ul{
+    float: right;
+}
+#login .right li{
+    width: 72px;
+    height: 40px;
+    float: left;
+    text-align: center;
+}
+//我的宝贝
+#login .right li:nth-child(1) div{
+    width: 92px;
+    height: 40px;
+    background: #fff;
+    display: none;
+}
+#login .right li:nth-child(1):hover{
+    background: #fff;
+    color: #fe0036;
+    text-decoration:underline;
+    div{
+        display: block;
+    }
+}
+#login .right li:nth-child(1) .div1:hover .a1{
+    color: #fe0036;
+    text-decoration:underline;
+}
+#login .right li:nth-child(1) .div2:hover .a2{
+    color: #fe0036;
+    text-decoration:underline;
+}
+//收藏夹
+#login .right li:nth-child(3) div{
+    width: 92px;
+    height: 40px;
+    background: #fff;
+    display: none;
+}
+#login .right li:nth-child(3):hover{
+    background: #fff;
+    color: #fe0036;
+    text-decoration:underline;
+    div{
+        display: block;
+    }
+}
+#login .right li:nth-child(3) .div1:hover .a1{
+    color: #fe0036;
+    text-decoration:underline;
+}
+#login .right li:nth-child(3) .div2:hover .a2{
+    color: #fe0036;
+    text-decoration:underline;
+}
+//搜索框
+#search_box{
+    width: 100%;
+    height: 130px;
+}
+#search_box .BG{
+    width: $page_width;
+    height: 130px;
+    margin: 0 auto;
+    background: #fff;
+    overflow: hidden;
+}
+#search_box .BG .left{
+    width: 290px;
+    height: 130px;
+    border: 1px solid #ccc;
+    float: left;
+}
+#search_box .BG .SEO{
+    width: 623px;
+    height: 40px;
+    background: #FF0036;
+    margin: 0 auto;
+    margin-top: 38px;
+    border: 2px solid #FF0036;
+}
+
+#search_box .BG .SEO input{
+    width: 491px;
+    height: 36px;
+    outline:none; 
+    border: 2px solid #fff;
+    font-size: 16px;
+}
+#search_box .BG .SEO button{
+    width: 120px;
+    text-align: center;
+    background: #FF0036;
+    border: none;
+    font-size: 18px;
+    font-weight:800;
+    color: #fff;
+}
+//导航
+#navigation {
+    width: 100%;
+    height: 36px;
+}
+#navigation .BG{
+    width: $page_width;
+    height: 36px;
+    background: #ccc;
+    margin: 0 auto;
+}
+#navigation .BG .inner div{
+    float: left;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+}
+#navigation .BG .inner .div1{
+    width: 100px;
+}
+#navigation .BG .inner img{
+    width: 100px;
+    height: 30px;
+    margin: 3px 8px 2px 8px;
+}
+#navigation .BG .inner .div2{
+    margin: 0px 8px 0px 8px;
+}
+#navigation .BG .inner .div2 a{
+    color: #333;
+}
+#navigation .BG .inner .div2:hover a{
+    color: #FF0036;
+}
+//轮播图
+#slideshow .BG{
+    width: $page_width;
+    height: 500px;
+    background: lightsalmon;
+    margin: 0 auto;
+}
+//广告
+#advertising .BG{
+    width: 1230px;
+    height: 435px;
+    margin: 0 auto;
+}
+#advertising .BG .top{
+    width: $page_width;
+    height: 105px;
+
+}
+#advertising .BG .left{
+    width: 610px;
+    height: 330px;
+    float: left;
+    .left1{
+        width: 250px;
+        height: 330px;
+        border-radius: 10px;
+        background: lemonchiffon;
+        float: left;
+        margin-right: 10px;  
+    }
+    .left2{
+        width: 350px;
+        height: 160px;
+        border-radius: 10px;
+        background: lightgreen;
+        float: left;
+    }
+    .left3{
+        margin-top: 10px;
+    }
+}
+
+#advertising .BG .right{
+    width: 610px;
+    height: 330px;
+    margin-left: 10px;
+    float: left;
+    .left1{
+        width: 250px;
+        height: 330px;
+        border-radius: 10px;
+        background: lemonchiffon;
+        float: left;
+        margin-right: 10px;  
+    }
+    .left2{
+        width: 350px;
+        height: 160px;
+        border-radius: 10px;
+        background: lightgreen;
+        float: left;
+    }
+    .left3{
+        margin-top: 10px;
+    }
+}
+//品牌闪购
+#brand .BG{
+    width: $page_width;
+    height: 370px;
+    background: lightslategrey;
+    margin: 0 auto;
+    margin-top: 40px;
+    //公用的部分
+    .p1{
+        float: left;
+        font-weight:800;
+    }
+    .p2{
+        width: 20px;
+        height: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        text-align: center;
+        float: right;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    .top{
+        width: 100%;
+        height: 54px;
+        background: #eee;
+        overflow: hidden;
+    }
+    //公有的部分
+    //左边
+    .left{
+        width: 234px;
+        height: 370px;
+        background: lightyellow;
+        float: left;
+            .top div{
+                width: 214px;
+                height: 54px;
+                margin: 18px 10px;
+                overflow: hidden;
+            }
+        .bottom{
+            width: 234px;
+            height: 316px;
+            background: lightcoral;
+        }
+    }
+    //中右边
+    .div2{
+        width: 485px;
+        height: 370px;
+        background: mediumaquamarine;
+        float: left;
+        margin-left: 13px;
+            .top div{
+                width: 465px;
+                height: 54px;
+                margin: 18px 10px;
+                overflow: hidden;
+            }
+        .bottom{
+            width: 485px;
+            height: 316px;
+            background: lightcoral;
+        }
+    }
+    
+}
+//品牌推荐
+#recommend .BG{
+    width: 1230px;
+    height: 327px;
+    margin: 15px auto;
+    background: lightgoldenrodyellow;
+}
+#recommend .BG div{
+    width: 123px;
+    height: 109px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    float: left;
+}
+#recommend .BG div:hover{
+    background: #000;
+    opacity: 0.7;
+    .p2{
+        display: block;
+    }
+}
+#recommend .BG p{
+    width: 100%;
+    text-align: center;
+    line-height: 18px;
+    font-size: 12px;
+    color: #fff;
+}
+#recommend .BG .p1{
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+#recommend .BG .p2{
+    width: 60px;
+    height: 20px;
+    border-radius: 9px;
+    background: red;
+    margin: auto;
+    display: none;
+}
+
+
