@@ -72,7 +72,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-decoration: none;
 }
 
-/* line 12, ../sass/index.scss */
+/* line 11, ../sass/index.scss */
+body {
+  position: relative;
+  background: #f5f5f5;
+}
+
+/* line 15, ../sass/index.scss */
+.logo_1 {
+  width: 1600px;
+  position: absolute;
+  top: 93px;
+  z-index: -99999;
+}
+
+/* line 22, ../sass/index.scss */
 #top {
   width: 100%;
   height: 80px;
@@ -80,7 +94,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background: #fe0036;
 }
 
-/* line 18, ../sass/index.scss */
+/* line 28, ../sass/index.scss */
 #top header {
   width: 1230px;
   height: 80px;
@@ -88,7 +102,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background: #ccc;
 }
 
-/* line 25, ../sass/index.scss */
+/* line 35, ../sass/index.scss */
 #login {
   width: 100%;
   height: 41px;
@@ -98,30 +112,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   line-height: 26px;
 }
 
-/* line 33, ../sass/index.scss */
+/* line 43, ../sass/index.scss */
 #login .BG {
   width: 1230px;
   height: 41px;
   margin: 0 auto;
 }
 
-/* line 38, ../sass/index.scss */
+/* line 48, ../sass/index.scss */
 #login .left {
   float: left;
 }
 
-/* line 41, ../sass/index.scss */
+/* line 51, ../sass/index.scss */
 #login .left a {
   color: #fff;
   margin-left: 20px;
 }
 
-/* line 46, ../sass/index.scss */
+/* line 56, ../sass/index.scss */
 #login .right ul {
   float: right;
 }
 
-/* line 49, ../sass/index.scss */
+/* line 59, ../sass/index.scss */
 #login .right li {
   width: 72px;
   height: 40px;
@@ -129,7 +143,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-align: center;
 }
 
-/* line 56, ../sass/index.scss */
+/* line 66, ../sass/index.scss */
 #login .right li:nth-child(1) div {
   width: 92px;
   height: 40px;
@@ -137,30 +151,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: none;
 }
 
-/* line 62, ../sass/index.scss */
+/* line 72, ../sass/index.scss */
 #login .right li:nth-child(1):hover {
   background: #fff;
   color: #fe0036;
   text-decoration: underline;
 }
-/* line 66, ../sass/index.scss */
+/* line 76, ../sass/index.scss */
 #login .right li:nth-child(1):hover div {
   display: block;
 }
 
-/* line 70, ../sass/index.scss */
+/* line 80, ../sass/index.scss */
 #login .right li:nth-child(1) .div1:hover .a1 {
   color: #fe0036;
   text-decoration: underline;
 }
 
-/* line 74, ../sass/index.scss */
+/* line 84, ../sass/index.scss */
 #login .right li:nth-child(1) .div2:hover .a2 {
   color: #fe0036;
   text-decoration: underline;
 }
 
-/* line 79, ../sass/index.scss */
+/* line 89, ../sass/index.scss */
 #login .right li:nth-child(3) div {
   width: 92px;
   height: 40px;
@@ -168,36 +182,36 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: none;
 }
 
-/* line 85, ../sass/index.scss */
+/* line 95, ../sass/index.scss */
 #login .right li:nth-child(3):hover {
   background: #fff;
   color: #fe0036;
   text-decoration: underline;
 }
-/* line 89, ../sass/index.scss */
+/* line 99, ../sass/index.scss */
 #login .right li:nth-child(3):hover div {
   display: block;
 }
 
-/* line 93, ../sass/index.scss */
+/* line 103, ../sass/index.scss */
 #login .right li:nth-child(3) .div1:hover .a1 {
   color: #fe0036;
   text-decoration: underline;
 }
 
-/* line 97, ../sass/index.scss */
+/* line 107, ../sass/index.scss */
 #login .right li:nth-child(3) .div2:hover .a2 {
   color: #fe0036;
   text-decoration: underline;
 }
 
-/* line 102, ../sass/index.scss */
+/* line 112, ../sass/index.scss */
 #search_box {
   width: 100%;
   height: 130px;
 }
 
-/* line 106, ../sass/index.scss */
+/* line 116, ../sass/index.scss */
 #search_box .BG {
   width: 1230px;
   height: 130px;
@@ -206,7 +220,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   overflow: hidden;
 }
 
-/* line 113, ../sass/index.scss */
+/* line 123, ../sass/index.scss */
 #search_box .BG .left {
   width: 290px;
   height: 130px;
@@ -214,7 +228,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   float: left;
 }
 
-/* line 119, ../sass/index.scss */
+/* line 129, ../sass/index.scss */
 #search_box .BG .SEO {
   width: 623px;
   height: 40px;
@@ -224,7 +238,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border: 2px solid #FF0036;
 }
 
-/* line 128, ../sass/index.scss */
+/* line 138, ../sass/index.scss */
 #search_box .BG .SEO input {
   width: 491px;
   height: 36px;
@@ -233,7 +247,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 16px;
 }
 
-/* line 135, ../sass/index.scss */
+/* line 145, ../sass/index.scss */
 #search_box .BG .SEO button {
   width: 120px;
   text-align: center;
@@ -244,13 +258,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #fff;
 }
 
-/* line 145, ../sass/index.scss */
+/* line 155, ../sass/index.scss */
 #navigation {
   width: 100%;
   height: 36px;
 }
 
-/* line 149, ../sass/index.scss */
+/* line 159, ../sass/index.scss */
 #navigation .BG {
   width: 1230px;
   height: 36px;
@@ -258,7 +272,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin: 0 auto;
 }
 
-/* line 155, ../sass/index.scss */
+/* line 165, ../sass/index.scss */
 #navigation .BG .inner div {
   float: left;
   height: 36px;
@@ -266,34 +280,34 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   line-height: 36px;
 }
 
-/* line 161, ../sass/index.scss */
+/* line 171, ../sass/index.scss */
 #navigation .BG .inner .div1 {
   width: 100px;
 }
 
-/* line 164, ../sass/index.scss */
+/* line 174, ../sass/index.scss */
 #navigation .BG .inner img {
   width: 100px;
   height: 30px;
   margin: 3px 8px 2px 8px;
 }
 
-/* line 169, ../sass/index.scss */
+/* line 179, ../sass/index.scss */
 #navigation .BG .inner .div2 {
   margin: 0px 8px 0px 8px;
 }
 
-/* line 172, ../sass/index.scss */
+/* line 182, ../sass/index.scss */
 #navigation .BG .inner .div2 a {
   color: #333;
 }
 
-/* line 175, ../sass/index.scss */
+/* line 185, ../sass/index.scss */
 #navigation .BG .inner .div2:hover a {
   color: #FF0036;
 }
 
-/* line 179, ../sass/index.scss */
+/* line 189, ../sass/index.scss */
 #slideshow .BG {
   width: 1230px;
   height: 500px;
@@ -301,26 +315,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin: 0 auto;
 }
 
-/* line 186, ../sass/index.scss */
+/* line 196, ../sass/index.scss */
 #advertising .BG {
   width: 1230px;
   height: 435px;
   margin: 0 auto;
 }
 
-/* line 191, ../sass/index.scss */
+/* line 201, ../sass/index.scss */
 #advertising .BG .top {
   width: 1230px;
   height: 105px;
 }
 
-/* line 196, ../sass/index.scss */
+/* line 206, ../sass/index.scss */
 #advertising .BG .left {
   width: 610px;
   height: 330px;
   float: left;
 }
-/* line 200, ../sass/index.scss */
+/* line 210, ../sass/index.scss */
 #advertising .BG .left .left1 {
   width: 250px;
   height: 330px;
@@ -329,7 +343,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   float: left;
   margin-right: 10px;
 }
-/* line 208, ../sass/index.scss */
+/* line 218, ../sass/index.scss */
 #advertising .BG .left .left2 {
   width: 350px;
   height: 160px;
@@ -337,19 +351,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background: lightgreen;
   float: left;
 }
-/* line 215, ../sass/index.scss */
+/* line 225, ../sass/index.scss */
 #advertising .BG .left .left3 {
   margin-top: 10px;
 }
 
-/* line 220, ../sass/index.scss */
+/* line 230, ../sass/index.scss */
 #advertising .BG .right {
   width: 610px;
   height: 330px;
   margin-left: 10px;
   float: left;
 }
-/* line 225, ../sass/index.scss */
+/* line 235, ../sass/index.scss */
 #advertising .BG .right .left1 {
   width: 250px;
   height: 330px;
@@ -358,7 +372,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   float: left;
   margin-right: 10px;
 }
-/* line 233, ../sass/index.scss */
+/* line 243, ../sass/index.scss */
 #advertising .BG .right .left2 {
   width: 350px;
   height: 160px;
@@ -366,12 +380,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background: lightgreen;
   float: left;
 }
-/* line 240, ../sass/index.scss */
+/* line 250, ../sass/index.scss */
 #advertising .BG .right .left3 {
   margin-top: 10px;
 }
 
-/* line 245, ../sass/index.scss */
+/* line 255, ../sass/index.scss */
 #brand .BG {
   width: 1230px;
   height: 370px;
@@ -379,12 +393,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin: 0 auto;
   margin-top: 40px;
 }
-/* line 252, ../sass/index.scss */
+/* line 262, ../sass/index.scss */
 #brand .BG .p1 {
   float: left;
   font-weight: 800;
 }
-/* line 256, ../sass/index.scss */
+/* line 266, ../sass/index.scss */
 #brand .BG .p2 {
   width: 20px;
   height: 20px;
@@ -393,39 +407,39 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   text-align: center;
   float: right;
 }
-/* line 264, ../sass/index.scss */
+/* line 274, ../sass/index.scss */
 #brand .BG img {
   width: 100%;
   height: 100%;
 }
-/* line 268, ../sass/index.scss */
+/* line 278, ../sass/index.scss */
 #brand .BG .top {
   width: 100%;
   height: 54px;
   background: #eee;
   overflow: hidden;
 }
-/* line 276, ../sass/index.scss */
+/* line 286, ../sass/index.scss */
 #brand .BG .left {
   width: 234px;
   height: 370px;
   background: lightyellow;
   float: left;
 }
-/* line 281, ../sass/index.scss */
+/* line 291, ../sass/index.scss */
 #brand .BG .left .top div {
   width: 214px;
   height: 54px;
   margin: 18px 10px;
   overflow: hidden;
 }
-/* line 287, ../sass/index.scss */
+/* line 297, ../sass/index.scss */
 #brand .BG .left .bottom {
   width: 234px;
   height: 316px;
   background: lightcoral;
 }
-/* line 294, ../sass/index.scss */
+/* line 304, ../sass/index.scss */
 #brand .BG .div2 {
   width: 485px;
   height: 370px;
@@ -433,21 +447,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   float: left;
   margin-left: 13px;
 }
-/* line 300, ../sass/index.scss */
+/* line 310, ../sass/index.scss */
 #brand .BG .div2 .top div {
   width: 465px;
   height: 54px;
   margin: 18px 10px;
   overflow: hidden;
 }
-/* line 306, ../sass/index.scss */
+/* line 316, ../sass/index.scss */
 #brand .BG .div2 .bottom {
   width: 485px;
   height: 316px;
   background: lightcoral;
 }
 
-/* line 315, ../sass/index.scss */
+/* line 325, ../sass/index.scss */
 #recommend .BG {
   width: 1230px;
   height: 327px;
@@ -455,7 +469,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background: lightgoldenrodyellow;
 }
 
-/* line 321, ../sass/index.scss */
+/* line 331, ../sass/index.scss */
 #recommend .BG div {
   width: 123px;
   height: 109px;
@@ -465,17 +479,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   float: left;
 }
 
-/* line 329, ../sass/index.scss */
+/* line 339, ../sass/index.scss */
 #recommend .BG div:hover {
   background: #000;
   opacity: 0.7;
 }
-/* line 332, ../sass/index.scss */
+/* line 342, ../sass/index.scss */
 #recommend .BG div:hover .p2 {
   display: block;
 }
 
-/* line 336, ../sass/index.scss */
+/* line 346, ../sass/index.scss */
 #recommend .BG p {
   width: 100%;
   text-align: center;
@@ -484,13 +498,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #fff;
 }
 
-/* line 343, ../sass/index.scss */
+/* line 353, ../sass/index.scss */
 #recommend .BG .p1 {
   margin-top: 30px;
   margin-bottom: 8px;
 }
 
-/* line 347, ../sass/index.scss */
+/* line 357, ../sass/index.scss */
 #recommend .BG .p2 {
   width: 60px;
   height: 20px;
@@ -498,4 +512,328 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background: red;
   margin: auto;
   display: none;
+}
+
+/* line 367, ../sass/index.scss */
+.BG-name {
+  width: 1230px;
+  height: 665px;
+  background: #ccc;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* line 374, ../sass/index.scss */
+.BG-name .top {
+  width: 100%;
+  height: 47px;
+}
+/* line 378, ../sass/index.scss */
+.BG-name .logo {
+  width: 214px;
+  height: 25px;
+  margin: 11px 0;
+}
+
+/* line 386, ../sass/index.scss */
+#tmallSupr {
+  width: 100%;
+  height: 665px;
+}
+
+/* line 391, ../sass/index.scss */
+#tmallSupr .bottom {
+  width: 1230px;
+  height: 618px;
+  background: lightskyblue;
+}
+/* line 395, ../sass/index.scss */
+#tmallSupr .bottom .left {
+  width: 235px;
+  height: 618px;
+  background: linen;
+  float: left;
+  margin-right: 13px;
+}
+/* line 403, ../sass/index.scss */
+#tmallSupr .bottom .center {
+  width: 484px;
+  height: 302px;
+  background: mediumaquamarine;
+  float: left;
+}
+/* line 408, ../sass/index.scss */
+#tmallSupr .bottom .center p {
+  width: 241px;
+  height: 57px;
+  float: left;
+  background: mistyrose;
+  text-align: center;
+  line-height: 57px;
+  font-size: 18px;
+}
+/* line 417, ../sass/index.scss */
+#tmallSupr .bottom .center p:hover {
+  background: #00B262;
+  color: #fff;
+}
+/* line 422, ../sass/index.scss */
+#tmallSupr .bottom .right {
+  width: 236px;
+  height: 302px;
+  background: mediumslateblue;
+  float: left;
+  margin-left: 13px;
+}
+/* line 429, ../sass/index.scss */
+#tmallSupr .bottom .div1 {
+  width: 236px;
+  height: 302px;
+  background: mediumvioletred;
+  float: left;
+  margin-top: 13px;
+  margin-right: 13px;
+}
+/* line 437, ../sass/index.scss */
+#tmallSupr .bottom .div2 {
+  width: 235px;
+  height: 302px;
+  background: mediumvioletred;
+  margin-top: 13px;
+  float: left;
+}
+
+/* line 447, ../sass/index.scss */
+#tmall_internationality .left {
+  width: 235px;
+  height: 618px;
+  float: left;
+}
+/* line 451, ../sass/index.scss */
+#tmall_internationality .left div {
+  width: 235px;
+  height: 301px;
+  background: #fff;
+  float: left;
+}
+/* line 457, ../sass/index.scss */
+#tmall_internationality .left .div2 {
+  margin-top: 16px;
+}
+
+/* line 462, ../sass/index.scss */
+.right-name div {
+  width: 236px;
+  height: 302px;
+  background: #fff;
+  float: left;
+  margin-left: 12px;
+}
+/* line 469, ../sass/index.scss */
+.right-name .div5 {
+  margin-top: 13px;
+}
+
+/* line 474, ../sass/index.scss */
+#boutique {
+  width: 100%;
+  height: 90px;
+}
+/* line 477, ../sass/index.scss */
+#boutique .BG {
+  width: 1230px;
+  height: 90px;
+  margin: 0 auto;
+}
+/* line 481, ../sass/index.scss */
+#boutique .BG img {
+  width: 1230px;
+  height: 90px;
+}
+
+/* line 488, ../sass/index.scss */
+.title-name {
+  width: 100%;
+  height: 47px;
+  background: #00B262;
+  padding-top: 13px;
+}
+/* line 493, ../sass/index.scss */
+.title-name p {
+  width: 1230px;
+  height: 18px;
+  border-left: 4px solid #000;
+  font-size: 18px;
+}
+/* line 498, ../sass/index.scss */
+.title-name p span {
+  display: block;
+  width: 300px;
+  height: 26px;
+  margin-left: 5px;
+}
+
+/* line 506, ../sass/index.scss */
+.left_name {
+  width: 235px;
+  height: 618px;
+  background: lightskyblue;
+  float: left;
+}
+
+/* line 513, ../sass/index.scss */
+#guess h2 {
+  width: 1230px;
+  height: 43px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* line 519, ../sass/index.scss */
+.div_bottom {
+  width: 1230px;
+  margin: 0 auto;
+  background: lightgoldenrodyellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-self: center;
+}
+/* line 527, ../sass/index.scss */
+.div_bottom div {
+  width: 240px;
+  height: 320px;
+  background: lightgreen;
+  margin-bottom: 10px;
+}
+
+/* line 534, ../sass/index.scss */
+.miao {
+  width: 80px;
+  height: 45px;
+  margin: 0 auto;
+  background: magenta;
+}
+
+/* line 541, ../sass/index.scss */
+footer {
+  position: relative;
+  width: 1420px;
+  height: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* line 543, ../sass/index.scss */
+footer .img_2 {
+  width: 1420px;
+  height: 300px;
+  z-index: -99;
+  position: absolute;
+  bottom: 0;
+}
+/* line 554, ../sass/index.scss */
+footer .top {
+  width: 1190px;
+  height: 100px;
+  background: lightslategray;
+  margin: 30px auto;
+}
+/* line 560, ../sass/index.scss */
+footer .center {
+  width: 1190px;
+  height: 213px;
+  border-top: 1px solid #000;
+  margin: 0 auto;
+}
+/* line 565, ../sass/index.scss */
+footer .center .name {
+  margin-top: 20px;
+  height: 193px;
+  width: 100%;
+}
+/* line 569, ../sass/index.scss */
+footer .center .name ul {
+  width: 186px;
+  height: 100%;
+  margin-left: 50px;
+  float: left;
+}
+/* line 574, ../sass/index.scss */
+footer .center .name ul li:nth-child(1) {
+  font-size: 16px;
+  font-weight: 800;
+  color: #646464;
+}
+/* line 579, ../sass/index.scss */
+footer .center .name ul a {
+  font-size: 12px;
+  color: #646464;
+  line-height: 20px;
+}
+/* line 584, ../sass/index.scss */
+footer .center .name ul img {
+  width: 105px;
+  height: 105px;
+}
+/* line 591, ../sass/index.scss */
+footer .bottom {
+  width: 1190px;
+  height: 236px;
+  background: #000;
+  margin: 0 auto;
+  border-top: 2px solid #FF0036;
+  overflow: hidden;
+}
+/* line 598, ../sass/index.scss */
+footer .bottom .ul_1 {
+  width: 1190px;
+  height: 35px;
+  line-height: 35px;
+  color: #fff;
+  font-size: 12px;
+}
+/* line 604, ../sass/index.scss */
+footer .bottom .ul_1 a {
+  float: left;
+  margin-right: 5px;
+  color: #fff;
+}
+/* line 609, ../sass/index.scss */
+footer .bottom .ul_1 span {
+  float: left;
+}
+/* line 613, ../sass/index.scss */
+footer .bottom div {
+  font-size: 12px;
+  height: 20px;
+  color: #ccc;
+  float: left;
+  margin-right: 65px;
+  line-height: 20px;
+}
+/* line 620, ../sass/index.scss */
+footer .bottom div a {
+  color: #ccc;
+}
+/* line 624, ../sass/index.scss */
+footer .bottom p {
+  color: #333;
+  width: 1190px;
+  float: left;
+  line-height: 20px;
+  font-size: 12px;
+}
+
+/* line 634, ../sass/index.scss */
+#location {
+  width: 100%;
+  height: 50px;
+  background: #FF0036;
+}
+/* line 638, ../sass/index.scss */
+#location .BG {
+  width: 1260px;
+  height: 50px;
+  background: lightyellow;
+  margin: 0 auto;
 }

@@ -8,6 +8,16 @@ $page_width:1230px;
     box-sizing:border-box;
     text-decoration: none;
 }
+body{
+    position: relative;
+    background: #f5f5f5;
+}
+.logo_1{
+    width: 1600px;
+    position: absolute;
+    top: 93px;
+    z-index: -99999;
+}
 //头部
 #top{
     width: 100%;
@@ -352,5 +362,287 @@ $page_width:1230px;
     margin: auto;
     display: none;
 }
+
+//共有部分
+.BG-name{
+    width: 1230px;
+    height:665px;
+    background: #ccc;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .top{
+        width: 100%;
+        height: 47px;
+    }
+    .logo{
+    width: 214px;
+    height: 25px;
+    margin: 11px 0;
+    }
+}
+//共有部分
+//天猫超市
+#tmallSupr{
+    width: 100%;
+    height: 665px;
+}
+#tmallSupr{
+    .bottom{
+        width: 1230px;
+        height: 618px;
+        background: lightskyblue;
+        .left{
+            width: 235px;
+            height: 618px;
+            background: linen;
+            float: left;
+            margin-right: 13px;
+            
+        }
+        .center{
+            width: 484px;
+            height: 302px;
+            background: mediumaquamarine;
+            float: left;
+            p{
+                width: 241px;
+                height: 57px;
+                float: left;
+                background: mistyrose;
+                text-align: center;
+                line-height: 57px;
+                font-size: 18px;
+            }
+            p:hover{
+                background: #00B262;
+                color: #fff;
+            }
+        }
+        .right{
+            width: 236px;
+            height: 302px;
+            background: mediumslateblue;
+            float: left;
+            margin-left: 13px;
+        }
+        .div1{
+            width: 236px;
+            height: 302px;
+            background: mediumvioletred;
+            float: left;
+            margin-top: 13px;
+            margin-right: 13px;
+        }
+        .div2{
+            width: 235px;
+            height: 302px;
+            background: mediumvioletred;
+            margin-top: 13px;
+            float: left;
+        }
+    }
+}
+//天猫国际
+#tmall_internationality .left{
+    width: 235px;
+    height: 618px;
+    float: left;
+    div{
+        width: 235px;
+        height: 301px;
+        background: #fff;
+        float: left;
+    }
+    .div2{
+        margin-top: 16px;
+    }
+}
+.right-name{
+    div{
+    width: 236px;
+    height: 302px;
+    background: #fff;
+    float: left; 
+    margin-left: 12px;
+    }
+    .div5{
+        margin-top: 13px;
+    }
+}
+//广告
+#boutique{
+    width: 100%;
+    height: 90px;
+    .BG{
+        width: 1230px;
+        height: 90px;
+        margin: 0 auto;
+        img{
+            width: 1230px;
+            height: 90px;
+        }
+    }
+}
+//美丽生生//潮店酷玩
+.title-name{
+    width: 100%;
+    height: 47px;
+    background: #00B262;
+    padding-top: 13px;;
+    p{
+        width: 1230px;
+        height: 18px;
+        border-left: 4px solid #000;
+        font-size: 18px;
+      span{
+        display: block;
+        width: 300px;
+        height: 26px;
+        margin-left: 5px;
+    }  
+    }
+}
+.left_name{
+    width: 235px;
+    height: 618px;
+    background: lightskyblue;
+    float: left;
+}
+//猜你喜欢
+#guess h2{
+    width: 1230px;
+    height: 43px;
+    margin: 0 auto;
+    text-align: center;
+}
+.div_bottom{
+    width: 1230px;
+    margin: 0 auto;
+    background: lightgoldenrodyellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+    div{
+        width: 240px;
+        height: 320px;
+        background: lightgreen;
+        margin-bottom: 10px;
+    }
+}
+.miao{
+    width: 80px;
+    height: 45px;
+    margin: 0 auto;
+    background: magenta;
+}
+//底部
+footer{
+    position: relative;
+    .img_2{
+        width: 1420px;
+        height: 300px;
+        z-index: -99;
+        position: absolute;
+        bottom: 0;
+    }
+    width: 1420px;
+    height: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    .top{
+        width: 1190px;
+        height: 100px;
+        background: lightslategray;
+        margin: 30px auto;
+    }
+    .center{
+        width: 1190px;
+        height: 213px;
+        border-top: 1px solid #000;
+        margin: 0 auto;
+        .name{
+            margin-top: 20px;
+            height: 193px;
+            width: 100%;
+            ul{
+                width: 186px;
+                height: 100%;
+                margin-left: 50px;
+                float: left;
+                li:nth-child(1){
+                    font-size: 16px;
+                    font-weight:800;
+                    color: #646464;
+                }
+                a{
+                    font-size: 12px;
+                    color: #646464;
+                    line-height: 20px;
+                }
+                img{
+                    width: 105px;
+                    height: 105px;
+                }
+            }
+        }
+    }
+    .bottom{
+        width: 1190px;
+        height: 236px;
+        background: #000;
+        margin: 0 auto;
+        border-top: 2px solid #FF0036;
+        overflow: hidden;
+        .ul_1{
+            width: 1190px;
+            height: 35px;
+            line-height: 35px;
+            color: #fff;
+            font-size: 12px;
+            a{
+                float: left;
+                margin-right: 5px;
+                color: #fff;
+            }
+            span{
+                float: left;
+            }
+        }
+        div{
+            font-size: 12px;
+            height: 20px;
+            color: #ccc;
+            float: left;
+            margin-right: 65px;
+            line-height: 20px;
+            a{
+                color: #ccc;
+            }
+        }
+        p{
+            color: #333;
+            width: 1190px;
+            float: left;
+            line-height: 20px;
+            font-size: 12px;
+        }
+    }
+}
+//定位搜索框
+#location {
+   width: 100%;
+   height: 50px;
+   background: #FF0036; 
+  .BG{
+    width: 1260px;
+    height: 50px;
+    background: lightyellow;
+    margin: 0 auto;
+}  
+}
+
+
 
 
