@@ -60,6 +60,7 @@ body{
          }
      }  
     }
+    //楼梯****************************************************************
     #stairs{
         width: 35px;
         height: 443px;
@@ -97,24 +98,22 @@ body{
         }
     }
 }
-.logo_1{
-    width: 1600px;
-    position: absolute;
-    top: 93px;
-    z-index: -99999;
-}
+
 //头部
 #top{
-    width: 100%;
     height: 80px;
     margin: 0 auto;
     background: #fe0036;
 }
 #top header{
-    width: $page_width;
+    width:990px;
     height: 80px;
     margin: 0 auto;
     background: #ccc;
+    img{
+        width: 990px;
+        height: 80px;
+    }
 }
 //登录注册
 #login{
@@ -123,7 +122,7 @@ body{
     background: #d91e1c;
     font-size: 12px;
     color: #fff;
-    line-height: 26px;
+    line-height: 30px;
 }
 #login .BG{
     width: $page_width;
@@ -140,58 +139,182 @@ body{
 //导航栏
 #login .right ul{
     float: right;
-}
-#login .right li{
-    width: 72px;
-    height: 40px;
-    float: left;
-    text-align: center;
-}
-//我的宝贝
-#login .right li:nth-child(1) div{
-    width: 92px;
-    height: 40px;
-    background: #fff;
-    display: none;
-}
-#login .right li:nth-child(1):hover{
-    background: #fff;
-    color: #fe0036;
-    text-decoration:underline;
-    div{
+    li{
+        width: 72px;
+        height: 40px;
+        float: left;
+        text-align: center;
+        position: relative;
+        div{
+            position: absolute;
+        }
+    }
+    span{
+        font-size: 12px;
+    }
+    //1我的淘宝
+    li:nth-child(1) div{
+        width: 92px;
+        height: 80px;
+        border: 1px solid #ccc;
+        border-top: none;
+        background: #fff;
+        display: none;
+    }
+    li:nth-child(1) a,li:nth-child(3) a{
+        width: 92px;
+        height: 40px;
+        color: #666;
+        font-size: 12px;
+        margin-left: 5px;
+        line-height: 40px;
+    }
+    li:nth-child(1):hover{//1.我的淘宝
+        background: #fff;
+        color: #fe0036;
+        div{
+            height: 100px;
+            display: block;
+            z-index: 999;
+        }
+        .div1 .a2:hover,.a1:hover{//已买到的宝贝，已卖出的宝贝
+            color: #fe0036;
+            text-decoration:underline;
+        }
+    } 
+    li:nth-child(2):hover,li:nth-child(4):hover,li:nth-child(5):hover{//购物车/手机版/淘宝网
+        color: orange;
+    }
+    li:nth-child(3) div{//收藏夹
+        width: 92px;
+        height: 80px;
+        background: #fff;
+        display: none;
+        border: 1px solid #ccc;
+        border-top: none;
+        position: absolute;
+        z-index: 999;
+        a{
+            margin-left: 8px;
+        }
+    }
+    li:nth-child(3):hover{//收藏夹
+        background: #fff;
+        color: #fe0036;
+        div{
+            display: block;
+        }
+    }
+    li:nth-child(3) .a2:hover,.a1:hover{//收藏的宝贝/收藏的店铺
+        color: #fe0036;
+        text-decoration:underline;
+    }
+    li:nth-child(6):hover{//商家支持
+        background: #fff;
+        color: #fe0036;
+    }
+    li:nth-child(6) div{//商家支持
+        width: 150px;
+        height: 250px;
+        background: #fff;
+        margin-left: -78px;
+        text-align: left;
+        display: none;
+        p{//商家、帮助
+            color: #666;
+            font-weight: 600;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+        a{//天猫规则....
+            color: #666;
+            font-size: 12px;
+            margin: 0 10px;
+        }
+        a:hover{
+          color: #fe0036;  
+          text-decoration:underline;
+        }
+        article{
+            width: 150px;
+            height: 80px;
+            margin-top: 10px;
+            border-top: 1px dashed #ccc;
+            border-bottom: 1px dashed #ccc;
+        }
+    }
+
+    li:nth-child(6):hover div{//移入显示商家支持
         display: block;
     }
-}
-#login .right li:nth-child(1) .div1:hover .a1{
-    color: #fe0036;
-    text-decoration:underline;
-}
-#login .right li:nth-child(1) .div2:hover .a2{
-    color: #fe0036;
-    text-decoration:underline;
-}
-//收藏夹
-#login .right li:nth-child(3) div{
-    width: 92px;
-    height: 40px;
-    background: #fff;
-    display: none;
-}
-#login .right li:nth-child(3):hover{
-    background: #fff;
-    color: #fe0036;
-    text-decoration:underline;
-    div{
-        display: block;
+    li:nth-child(7){
+        ._div{
+            width: 1190px;
+            height: 200px;
+            background: #fff;
+            z-index: 99999;
+            left:-1118px;
+            border: 1px solid #ccc;
+            border-top: none;
+            display: none;
+            p{
+                font-size: 16px;
+                text-align: left;
+            }
+            .p1{
+                color: #f56a00;
+            }
+            .p2{
+                color:#2263d4;
+            }
+            .p3{
+                color:#666;
+            }
+            a{
+                display: block;
+                width: 82px;
+                height: 40px;
+                color: #666;
+                float: left;
+                line-height: 40px;
+            }
+            a:hover{
+                color: #fe0036;
+                text-decoration:underline;
+            }
+            .name_1,.name_2{
+                width: 445px;
+                height: 160px;
+                float: left;
+            }
+            .name_1{
+                margin: 20px 0 0 30px;
+            }
+            .name_2{
+                border-left: 1px solid #ccc;
+                margin-top: 20px;
+                padding-left: 30px;
+            }
+            .name_3{
+                width: 200px;
+                height: 160px;
+                border-left: 1px solid #ccc;
+                float: left;
+                margin: 20px 0 0 30px;
+                padding-left: 30px;
+            }
+        }
+        &:hover{
+            background: #fff;
+            color: #fe0036;  
+        } 
+        &:hover ._div{
+            display: block;
+        }
+        
     }
-}
-#login .right li:nth-child(3) .div1:hover .a1{
-    color: #fe0036;
-    text-decoration:underline;
-}
-#login .right li:nth-child(3) .div2:hover .a2{
-    color: #fe0036;
-    text-decoration:underline;
+   
+    
 }
 //搜索框
 #search_box{
@@ -256,6 +379,7 @@ body{
     ul{
         font-size: 14px;
     }
+    //商品分类***************************************************
     .div1{
         width: 100px;
         background: #C60A0A;
@@ -266,34 +390,93 @@ body{
             display: none;
             background: #000;
             opacity: 0.8;
-            span{
-                display: block;
-                width: 35px;
-                height: 31px;
-                float: left;
-            }
+            position: relative;
             li{
                 width: 200px;
                 height: 31px;
                 float: left;
                 text-align: left;
                 font-size: 14px;
+                .box{
+                    width: 852px;
+                    height: 500px;
+                    background: #ccc;
+                    position: absolute;
+                    left: 200px;
+                    top: 0;
+                    display: none;
+                    .left{
+                        width: 632px;
+                        height: 500px;
+                        background: #fff;
+                        padding: 20px;
+                        .p1{
+                            width: 100px;
+                            float: left;
+                            color: #000;
+                            line-height: 42px;
+                            font-weight: 600;
+                        }
+                        .p2{
+                            width: 452px;
+                            text-align: left;
+                            float: left;
+                            margin-left: 10px;
+                            border-bottom: 1px dashed #ccc;
+                            padding: 10px 10px 10px 10px;
+                            line-height: 22px;
+                            a{
+                                color: #000;
+                                font-size: 14px;
+                                margin: 0 3px;
+                                font-weight: 400;
+                            }
+                            a:hover{
+                                color: #C60A0A;
+                            }
+                        }
+                    }
+                    .right{
+                        width: 200px;
+                        height: 480px;
+                        background: #fff;
+                        margin: 10px;
+                    }
+                    }
                 a{
                     color: #fff;
+                }
+                span{
+                    display: block;
+                    width: 35px;
+                    height: 31px;
+                    float: left;
+                    font-size: 16px;
+                    color: #fff;
+                    text-align: center;
                 }
             }
             li:hover{
                 background: #fff;
+                z-index: 99;
                 a{
                     color: #C60A0A;
                     font-weight: 600;
                 }
+                span{
+                    color: #C60A0A;
+                }
             }
         }
+    }
+    .div1 ul li:hover .box{
+        display: block;
+        z-index: 99;
     }
     .div1:hover{
         background: #eee;
         color: #C60A0A;
+        z-index: 999;
         ul{
             display: block;
         }
@@ -322,6 +505,7 @@ body{
                 margin:8px 0px 8px 24px;
                 color: #fff;
                 line-height: 31px;
+                
             }
         }
     }
@@ -355,11 +539,40 @@ body{
 } 
 
 //轮播图
-#slideshow .BG{
-    width: $page_width;
-    height: 500px;
-    background: lightyellow;
-    margin: 0 auto;
+#slideshow{
+    z-index: -99;
+    position: relative;
+    .logo_1{
+        width: 1600px;
+        margin: 0 auto;
+        position: absolute;
+        top: -195px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -999999;
+    }
+    .BG{
+        width: $page_width;
+        height: 500px;
+        background: lightyellow;
+        margin: 0 auto;
+        position: relative;
+        .slideshow_nav{
+            width: 200px;
+            height: 5px;
+            position: absolute;
+            top: 90%;
+            left: 45%;
+            li{
+                width: 25px;
+                height: 5px;
+                float: left;
+                background: red;
+                margin: 0 5px;
+            }
+        }
+    }
 }
 //广告
 #advertising .BG{
@@ -368,8 +581,13 @@ body{
     margin: 0 auto;
 }
 #advertising .BG .top{
-    width: $page_width;
+    width: 300px;
     height: 105px;
+    margin: 0 auto;
+    .img_04{
+        height: 70px;
+        margin-top: 10px;
+    }
 
 }
 #advertising .BG .left{
