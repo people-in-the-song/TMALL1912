@@ -185,6 +185,15 @@ body{
     li:nth-child(2):hover,li:nth-child(4):hover,li:nth-child(5):hover{//购物车/手机版/淘宝网
         color: orange;
     }
+    li:nth-child(4) div{
+        width: 175px;
+        background: #fff;
+        margin-left: -50px;
+        display: none;
+    }
+    li:nth-child(4):hover div {
+        display: block;
+    }
     li:nth-child(3) div{//收藏夹
         width: 92px;
         height: 80px;
@@ -579,6 +588,64 @@ body{
     width: 1230px;
     height: 435px;
     margin: 0 auto;
+    .p1{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .p2{
+        font-size: 16px;
+    }
+    .p_center{
+        text-align: center;
+        line-height: 28px;
+    }
+    .p_owned{
+        margin: 30px 0 0 30px;
+        float: left;
+        .p_owned_name{
+            line-height: 30px;
+        }
+        .p3{
+            color: #fff;
+            text-align: center;
+            width: 80px;
+            height: 30px;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+    }
+    .img_5{
+        width: 150px;
+        height: 30px;
+        margin: 0 auto;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        img{
+            width: 150px;
+        }
+    }
+    .img_6{
+        width: 180px;
+        height: 180px;
+        border: 1px solid red;
+        margin: 35px 35px 35px 35px;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .float_1,.float_2,.float_3,.float_4{
+        position: relative;
+        .img_7{
+            width: 130px;
+            height: 130px;
+            position: absolute;
+            border: 1px solid red;
+            top: 15px;
+            right: 15px;
+        }
+    }
 }
 #advertising .BG .top{
     width: 300px;
@@ -601,16 +668,39 @@ body{
         background: lemonchiffon;
         float: left;
         margin-right: 10px;  
+        .img_5{
+            background: #ff520c;
+        }
+        .p_center{
+            color: #ff520c;
+        }
     }
     .left2{
         width: 350px;
         height: 160px;
         border-radius: 10px;
-        background: lightgreen;
         float: left;
+        .p1,.p2{
+            color: #ff0084;
+        }
+        .p3{
+            background:#ff0084 ;
+        }
     }
     .left3{
         margin-top: 10px;
+        .p1,.p2{
+            color: #009d66;
+        }
+        .p3{
+            background:#009d66 ;
+        }
+    }
+    .float_1{
+        background: #FFECEC;
+    }
+    .float_2{
+        background: #D2E9FF;
     }
 }
 
@@ -626,16 +716,42 @@ body{
         background: lemonchiffon;
         float: left;
         margin-right: 10px;  
+        .img_5{
+            background: #ff0e3c;
+        }
+        .p_center{
+            color: #ff0e3c;
+        }
+    }
+    .right_bg{
+        background: #FFEEDD;
+    }
+    .float_3{
+        background: #D1E9E9;
+    }
+    .float_4{
+        background: #C7C7E2;
     }
     .left2{
         width: 350px;
         height: 160px;
         border-radius: 10px;
-        background: lightgreen;
         float: left;
+        .p1,.p2{
+            color: #005aff;
+        }
+        .p3{
+            background:#005aff ;
+        }
     }
     .left3{
         margin-top: 10px;
+        .p1,.p2{
+            color: #8300ff;
+        }
+        .p3{
+            background:#8300ff ;
+        }
     }
 }
 //品牌闪购
@@ -778,22 +894,23 @@ body{
     .bottom{
         width: 1230px;
         height: 618px;
-        background: lightskyblue;
         .left{
             width: 235px;
             height: 618px;
             background: linen;
             float: left;
-            margin-right: 13px;
-            
-        }
+            margin-right: 13px; 
+            }
         .center{
             width: 484px;
             height: 302px;
             background: mediumaquamarine;
             float: left;
-            p{
-                width: 241px;
+            span{
+                font-size: 24px;
+            }
+            .p1,.p2{
+                width: 242px;
                 height: 57px;
                 float: left;
                 background: mistyrose;
@@ -801,62 +918,225 @@ body{
                 line-height: 57px;
                 font-size: 18px;
             }
-            p:hover{
+            .p1_div1{
+                width: 100%;
+                height: 245px;
+                background: lightsalmon;
+                position: relative;
+                float: left;
+                // display: none;
+            }
+            .p2_div2{
+                width: 100%;
+                height: 245px;
+                background: lightskyblue;
+                position: relative;
+                float: left;
+                display: none;
+            }
+            .p1:hover,.p2:hover{
                 background: #00B262;
                 color: #fff;
             }
+            .p1_tally{
+                width: 297px;
+                height: 87px;
+                position: absolute;
+                bottom: 50px;
+                left: 0;
+                opacity: 0.8;
+                z-index: 9999;
+                div:nth-child(1){
+                    width: 210px;
+                    height: 87px;
+                    background: #f5f5f5;
+                    float: left;
+                }
+                div:nth-child(2){
+                    width: 0; 
+                    height: 0;
+                    border-width: 43px;
+                    border-style: solid;
+                    border-color:transparent transparent transparent #f5f5f5;
+                    float: left;
+                }
+                p{
+                    margin-left: 20px;
+                }
+                p:nth-child(1){
+                    color: #00B262;
+                    font-size: 24px;
+                    font-weight: 600;
+                    line-height: 50px;
+                }
+                p:nth-child(2){
+                    color: #000;
+                    font-size: 20px;
+                }
+            }
+            .div1_img{
+                width: 200px;
+                height: 200px;
+                border: 1px solid red;
+                position: absolute;
+                left: 242px;
+                bottom: 20px;
+            }
         }
-        .right{
+        .right,.div1,.div2{
             width: 236px;
             height: 302px;
-            background: mediumslateblue;
+            background: #fff;
             float: left;
+            .name_1{
+                width: 185px;
+                height: 185px;
+                border: 1px solid #ccc;
+                margin-left: 25px;
+                margin-top: 25px;
+            }
+            p:nth-child(2){
+                width: 135px;
+                height: 40px;
+                font-size: 14px;
+                line-height: 20px;
+                margin: 8px auto;
+                text-align: center;
+                color: #333;
+            }
+            p:nth-child(3){
+                font-size: 18px;
+                color: #FF0036;
+                line-height: 18px;
+                text-align: center;
+            }
+        }
+        .right:hover,.div1:hover,.div2:hover{
+            border: 1px solid red;
+            opacity: 0.8;
+        }
+        .right{
             margin-left: 13px;
         }
         .div1{
-            width: 236px;
-            height: 302px;
-            background: mediumvioletred;
-            float: left;
-            margin-top: 13px;
+            margin-top: 14px;
             margin-right: 13px;
         }
         .div2{
             width: 235px;
-            height: 302px;
-            background: mediumvioletred;
-            margin-top: 13px;
+            margin-top: 14px;
             float: left;
         }
     }
 }
+
 //天猫国际
 #tmall_internationality .left{
     width: 235px;
     height: 618px;
     float: left;
-    div{
+    .div1,.div2{
         width: 235px;
         height: 301px;
         background: #fff;
+        position: relative;
         float: left;
+    }
+    .div_name{
+        width: 198px;
+        height: 64px;
+        background: lightsalmon;
+        position: absolute;
+        bottom: 20%;
+        left: 0;
+        span{
+            display: block;
+            font-size: 18px;
+            line-height: 24px;
+            color: #fff;
+        }
+        div:nth-child(1){
+            width: 70px;
+            background: #000;
+            height: 64px;
+            float: left;
+            span{
+                width: 40px;
+                text-align: center; 
+                margin: 0 auto;
+                padding-top: 8px;
+            }
+        }
+        div:nth-child(2){
+            width: 128px;
+            height: 64px;
+            background: #999;
+            float: left;
+            padding-top: 8px;
+            span{
+                width: 118px;
+                margin-left: 10px;
+            }
+        }
     }
     .div2{
         margin-top: 16px;
     }
 }
 .right-name{
-    div{
+    .div_k {
     width: 236px;
     height: 302px;
     background: #fff;
     float: left; 
     margin-left: 12px;
+    padding: 20px;
     }
+    
     .div5{
         margin-top: 13px;
     }
 }
+.right-name .hehe{
+    line-height: 24px;
+    p:nth-child(1){
+    font-size: 18px;
+    }
+    p:nth-child(2){
+    color: #7A45E5;
+    }
+    p:nth-child(3){
+        width: 170px;
+        height: 170px;
+        border: 1px solid red;
+        margin: 25px 0 0 15px;
+    }
+}
+//天猫国际右边7项div****************************************
+.div_name{
+    .name_1{
+        width: 185px;
+        height: 185px;
+        border: 1px solid #ccc;
+        margin: 5px 0 0 5px;
+    }
+    p:nth-child(2){
+        width: 135px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 20px;
+        margin: 8px auto;
+        text-align: center;
+        color: #333;
+    }
+    p:nth-child(3){
+        font-size: 18px;
+        color: #FF0036;
+        line-height: 18px;
+        text-align: center;
+    }
+}
+//天猫国际右边7项div****************************************
 //广告
 #boutique{
     width: 100%;
@@ -876,7 +1156,8 @@ body{
     width: 100%;
     height: 47px;
     background: #00B262;
-    padding-top: 13px;;
+    padding-top: 13px;
+
     p{
         width: 1230px;
         height: 18px;
@@ -891,7 +1172,7 @@ body{
     }
 }
 .left_name{
-    width: 235px;
+    width: 238px;
     height: 618px;
     background: lightskyblue;
     float: left;
@@ -914,7 +1195,7 @@ body{
     div{
         width: 240px;
         height: 320px;
-        background: lightgreen;
+        background: #fff;
         margin-bottom: 10px;
     }
 }
@@ -922,11 +1203,20 @@ body{
     width: 80px;
     height: 45px;
     margin: 0 auto;
-    background: magenta;
+    span{
+        font-size: 30px;
+        text-align: center;
+        line-height: 50px;
+        color: #ccc;
+    }
 }
 //底部
 footer{
+    width: 100%;
+    border-top: 1px solid #ccc;
     position: relative;
+    background: #fff;
+    z-index: -9999;
     .img_2{
         width: 1420px;
         height: 300px;
@@ -941,8 +1231,47 @@ footer{
     .top{
         width: 1190px;
         height: 100px;
-        background: lightslategray;
         margin: 30px auto;
+        article{
+            width: 290px;
+            height: 100px;
+            float: left;
+            margin-left: 7px;
+            div{
+                width: 100px;
+                height: 100px;
+                overflow: hidden;
+                float: left;
+                .p_quan{
+                    width: 50px;
+                    height: 50px;
+                    border: 3px solid red;
+                    font-size: 25px;
+                    font-weight: 500;
+                    text-align: center;
+                    margin: 25px;
+                    border-radius: 25px;
+                    color: red;
+                    line-height: 44px;
+                }
+            }
+            p{
+                width: 190px;
+                height: 20px; 
+                float: left;
+            }
+            .p1{
+                font-size: 18px;
+                font-weight: 800;
+                margin-top: 30px;
+                color: #666;
+            }
+            .p2{
+                font-size: 16px;
+                color: #999;
+                margin-top: 5px;
+            }
+        }
     }
     .center{
         width: 1190px;
