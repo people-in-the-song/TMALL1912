@@ -1,0 +1,83 @@
+/* line 1, ../sass/registry.scss */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 6, ../sass/registry.scss */
+.title01 {
+  width: 1000px;
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+  margin: 0 auto;
+}
+
+/* line 12, ../sass/registry.scss */
+.title01_name {
+  width: 800px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+/* line 17, ../sass/registry.scss */
+.title01_name h4 {
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  float: left;
+}
+
+/* line 24, ../sass/registry.scss */
+.title01_name .active {
+  border-bottom: 1px solid red;
+}
+
+/* line 27, ../sass/registry.scss */
+fieldset {
+  margin: 0 auto;
+  border: none;
+  width: 1000px;
+  height: 600px;
+}
+
+/* line 34, ../sass/registry.scss */
+label {
+  display: inline-block;
+  width: 400px;
+  height: 60px;
+  text-align: right;
+  line-height: 60px;
+}
+
+/* line 41, ../sass/registry.scss */
+input {
+  width: 200px;
+  height: 30px;
+  margin-left: 20px;
+}
+
+/* line 46, ../sass/registry.scss */
+span {
+  margin-left: 20px;
+}
+
+/* line 49, ../sass/registry.scss */
+.dengLu {
+  height: 50px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+/* line 54, ../sass/registry.scss */
+.dengLu input {
+  width: 150px;
+  height: 40px;
+  background: red;
+  opacity: 0.7;
+  border-radius: 10px;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 20px;
+}

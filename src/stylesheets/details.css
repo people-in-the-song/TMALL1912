@@ -1,0 +1,158 @@
+/* line 1, ../sass/details.scss */
+.center_name {
+  width: 100%;
+  border-top: 1px solid #000;
+}
+/* line 4, ../sass/details.scss */
+.center_name article {
+  width: 1200px;
+  height: 800px;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+/* line 10, ../sass/details.scss */
+.center_name .left {
+  width: 400px;
+  height: 600px;
+  position: relative;
+  float: left;
+}
+/* line 15, ../sass/details.scss */
+.center_name .left .xt {
+  width: 400px;
+  height: 400px;
+  border: 1px solid #ccc;
+}
+/* line 19, ../sass/details.scss */
+.center_name .left .xt .xf {
+  width: 50px;
+  height: 50px;
+  background: lightgreen;
+}
+/* line 25, ../sass/details.scss */
+.center_name .left .dt {
+  width: 550px;
+  height: 550px;
+  border: 1px solid red;
+  position: absolute;
+  top: 0;
+  left: 420px;
+  display: none;
+}
+/* line 33, ../sass/details.scss */
+.center_name .left .dt .df {
+  width: 100px;
+  height: 100px;
+  background: lightseagreen;
+}
+/* line 39, ../sass/details.scss */
+.center_name .left .lbt {
+  margin-top: 20px;
+  width: 400px;
+  height: 72px;
+}
+/* line 43, ../sass/details.scss */
+.center_name .left .lbt span {
+  display: block;
+  float: left;
+  width: 19px;
+  height: 70px;
+  border: 1px solid #ccc;
+  line-height: 72px;
+  font-size: 20px;
+  text-align: center;
+  color: #999;
+}
+/* line 54, ../sass/details.scss */
+.center_name .left .lbt li {
+  width: 72px;
+  height: 72px;
+  border: 1px solid #ccc;
+  float: left;
+}
+/* line 62, ../sass/details.scss */
+.center_name .right {
+  width: 500px;
+  height: 400px;
+  padding: 0px 20px;
+  float: left;
+}
+/* line 67, ../sass/details.scss */
+.center_name .right .title {
+  width: 350px;
+  height: 80px;
+  background: lightseagreen;
+  margin: 0 auto;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: 600;
+}
+/* line 76, ../sass/details.scss */
+.center_name .right .price {
+  width: 350px;
+  height: 40px;
+  background: #ccc;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 40px;
+  font-size: 22px;
+  color: orangered;
+}
+/* line 86, ../sass/details.scss */
+.center_name .right .num {
+  width: 350px;
+  height: 50px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+/* line 91, ../sass/details.scss */
+.center_name .right .num input {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border: none;
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+}
+/* line 100, ../sass/details.scss */
+.center_name .right .num button {
+  width: 10px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+/* line 107, ../sass/details.scss */
+.center_name .right .close {
+  width: 400px;
+  height: 60px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-top: 10px;
+}
+/* line 113, ../sass/details.scss */
+.center_name .right .close a {
+  display: block;
+  width: 150px;
+  height: 40px;
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  margin: 5px;
+}
+/* line 123, ../sass/details.scss */
+.center_name .right .close .a1 {
+  color: orangered;
+  background: pink;
+  border: 1px solid red;
+}
+/* line 128, ../sass/details.scss */
+.center_name .right .close a:hover {
+  opacity: 0.8;
+}
+/* line 131, ../sass/details.scss */
+.center_name .right .close .a2 {
+  color: #fff;
+  background: red;
+}

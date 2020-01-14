@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/registry.css">
+</head>
+
+<body>
+    <div class="title01">
+        <div class="title01_name">
+            <h4 class="active">设置用户名</h4>
+            <h4>填写用户信息</h4>
+            <h4>设置支付方式</h4>
+            <h4>注册成功</h4>
+        </div>
+    </div>
+
+    <div class='fill_in' style="display:block">
+        <fieldset>
+            <form action="http://10.31.152.36/DLZC/php/register.php" method="post" id="form1">
+                <p><label for="">登录名：</label><input type="text" class="username" name="username" placeholder="请输入注册的手机号"><span></span>
+                </p>
+                <p><label for="">请设置登录密码</label><span>登录时验证，保护账户信息</span></p>
+                <p><label for="">登录密码：</label><input type="password" name="password" class="password"
+                        placeholder="请设置你的登录密码"><span></span></p>
+                <p><label for="">密码确认：</label><input type="password" class="password"
+                        placeholder="请再次输入你的密码"><span></span></p>
+                <p><label for="">设置会员名</label></p>
+                <p><label for="">会员名：</label><input type="text" name="vip" class="password"
+                        placeholder="会员名一旦设定成功无法更改"><span></span></p>
+                <p class="dengLu"><input type="submit" value="注册提交" name="submit"></p>
+            </form>
+        </fieldset>
+    </div>
+    <div></div>
+    
+</body>
+</html>

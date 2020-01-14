@@ -1,0 +1,48 @@
+#slideshow{
+    position: relative;
+    .logo_1{
+        width: 1600px;
+        margin: 0 auto;
+        position: absolute;
+        top: -195px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -999999;
+    }
+    .BG{
+        width: $page_width;
+        height: 500px;
+        background: lightyellow;
+        margin: 0 auto;
+        position: relative;
+        img{
+            width: 1230px;
+            height: 500px;
+            position: absolute;
+            display: none;
+        }
+        .show{
+            display: block;
+        }
+        .slideshow_nav{
+            width: 300px;
+            height: 5px;
+            position: absolute;
+            top: 90%;
+            left: 45%;
+            li{
+                width: 25px;
+                height: 5px;
+                float: left;
+                background: red;
+                margin: 0 5px;
+                cursor: pointer;
+            }
+            .active{
+                background: blue;
+            }
+            
+        }
+    }
+}

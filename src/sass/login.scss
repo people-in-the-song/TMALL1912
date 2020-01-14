@@ -1,0 +1,123 @@
+@import "bottom";
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline:none;
+    text-decoration: none;
+}
+#box{
+    width: 1420px;
+    height: 688px;
+    position: relative;
+}
+#box .logo{
+    padding: 22px 0px;
+    width: 1190px;
+    height: 44px;
+    margin: auto;
+}
+#box .logo img{
+    margin-top: 8px;
+    height: 27px;
+}
+.poster{
+    width: 100%;
+    background: rgb(247, 212, 154);
+    position: absolute;
+}
+.poster .img{
+    width: 1190px;
+    margin: auto;
+}
+#box .form_menu{
+    width: 350px;
+    height: 400px;
+    background: #fff;
+    position: absolute;
+    top: 80px;
+    left: 750px;
+    label{
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: #ccc;
+        line-height: 40px;
+        float: left;
+    }
+    .input_1,.input_2{
+        width: 238px;
+        margin-left: 10px;
+        height: 40px;
+        float: left;
+        border: none;
+        color: #999;
+    }
+}
+#box .form_menu fieldset{
+    width: 298px;
+    height: 200px;
+    border: none;
+    padding-top: 40px;
+    padding-left: 30px;
+}
+#box .form_menu {
+   p:nth-child(2),p:nth-child(3){
+    width: 298px;
+    height: 40px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    } 
+    button{
+        width: 298px;
+        height: 43px;
+        border: 1px solid #ccc;
+        margin-top: 20px;
+        background: #ff0036;
+        color: #fff;
+        font-size: 16px;
+        border-radius: 5px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    button:hover{
+        opacity: 0.8;
+    }
+    div:nth-child(5){
+        margin-top: 30px;
+        width: 180px;
+        height: 18px;
+        float: right;
+        a{
+            display: block;
+            font-size: 12px;
+            margin: 0 5px;
+            color: #333;
+            line-height: 18px;
+            float: left;
+        }
+        a:hover{
+            color: #ff0036;
+        }
+    }
+}
+.bottom{
+    padding-top: 30px;
+    background: #fff;
+    .ul_1{
+        color: #000;
+        a{
+            color: #000;
+        }
+    }
+    div{
+        color: #333;
+        a{
+            color: #333;
+        }
+    }
+    
+}
+
+
+

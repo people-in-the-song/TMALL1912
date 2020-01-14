@@ -1,0 +1,209 @@
+#login{
+    width: 100%;
+    height: 41px;
+    background: #d91e1c;
+    font-size: 12px;
+    color: #fff;
+    line-height: 30px;
+}
+#login .BG{
+    width: $page_width;
+    height: 41px;
+    margin: 0 auto;
+}
+#login .left{
+    float: left;
+}
+#login .left a{
+    color: #fff;
+    margin-left: 20px;
+}
+//导航栏
+#login .right ul{
+    float: right;
+    li{
+        width: 72px;
+        height: 40px;
+        float: left;
+        text-align: center;
+        position: relative;
+        div{
+            position: absolute;
+        }
+    }
+    span{
+        font-size: 12px;
+    }
+    //1我的淘宝
+    li:nth-child(1) div{
+        width: 92px;
+        height: 80px;
+        border: 1px solid #ccc;
+        border-top: none;
+        background: #fff;
+        display: none;
+    }
+    li:nth-child(1) a,li:nth-child(3) a{
+        width: 92px;
+        height: 40px;
+        color: #666;
+        font-size: 12px;
+        margin-left: 5px;
+        line-height: 40px;
+    }
+    li:nth-child(1):hover{//1.我的淘宝
+        background: #fff;
+        color: #fe0036;
+        div{
+            height: 100px;
+            display: block;
+            z-index: 999;
+        }
+        .div1 .a2:hover,.a1:hover{//已买到的宝贝，已卖出的宝贝
+            color: #fe0036;
+            text-decoration:underline;
+        }
+    } 
+    li:nth-child(2):hover,li:nth-child(4):hover,li:nth-child(5):hover{//购物车/手机版/淘宝网
+        color: orange;
+    }
+    li:nth-child(4) div{
+        width: 175px;
+        background: #fff;
+        margin-left: -50px;
+        display: none;
+    }
+    li:nth-child(4):hover div {
+        display: block;
+    }
+    li:nth-child(3) div{//收藏夹
+        width: 92px;
+        height: 80px;
+        background: #fff;
+        display: none;
+        border: 1px solid #ccc;
+        border-top: none;
+        position: absolute;
+        z-index: 999;
+        a{
+            margin-left: 8px;
+        }
+    }
+    li:nth-child(3):hover{//收藏夹
+        background: #fff;
+        color: #fe0036;
+        div{
+            display: block;
+        }
+    }
+    li:nth-child(3) .a2:hover,.a1:hover{//收藏的宝贝/收藏的店铺
+        color: #fe0036;
+        text-decoration:underline;
+    }
+    li:nth-child(6):hover{//商家支持
+        background: #fff;
+        color: #fe0036;
+    }
+    li:nth-child(6) div{//商家支持
+        width: 150px;
+        height: 250px;
+        background: #fff;
+        margin-left: -78px;
+        text-align: left;
+        display: none;
+        p{//商家、帮助
+            color: #666;
+            font-weight: 600;
+            font-size: 12px;
+            margin-left: 10px;
+        }
+        a{//天猫规则....
+            color: #666;
+            font-size: 12px;
+            margin: 0 10px;
+        }
+        a:hover{
+          color: #fe0036;  
+          text-decoration:underline;
+        }
+        article{
+            width: 150px;
+            height: 80px;
+            margin-top: 10px;
+            border-top: 1px dashed #ccc;
+            border-bottom: 1px dashed #ccc;
+        }
+    }
+
+    li:nth-child(6):hover div{//移入显示商家支持
+        display: block;
+    }
+    li:nth-child(7){
+        ._div{
+            width: 1190px;
+            height: 200px;
+            background: #fff;
+            z-index: 99999;
+            left:-1118px;
+            border: 1px solid #ccc;
+            border-top: none;
+            display: none;
+            p{
+                font-size: 16px;
+                text-align: left;
+            }
+            .p1{
+                color: #f56a00;
+            }
+            .p2{
+                color:#2263d4;
+            }
+            .p3{
+                color:#666;
+            }
+            a{
+                display: block;
+                width: 82px;
+                height: 40px;
+                color: #666;
+                float: left;
+                line-height: 40px;
+            }
+            a:hover{
+                color: #fe0036;
+                text-decoration:underline;
+            }
+            .name_1,.name_2{
+                width: 445px;
+                height: 160px;
+                float: left;
+            }
+            .name_1{
+                margin: 20px 0 0 30px;
+            }
+            .name_2{
+                border-left: 1px solid #ccc;
+                margin-top: 20px;
+                padding-left: 30px;
+            }
+            .name_3{
+                width: 200px;
+                height: 160px;
+                border-left: 1px solid #ccc;
+                float: left;
+                margin: 20px 0 0 30px;
+                padding-left: 30px;
+            }
+        }
+        &:hover{
+            background: #fff;
+            color: #fe0036;  
+        } 
+        &:hover ._div{
+            display: block;
+        }
+        
+    }
+   
+    
+}

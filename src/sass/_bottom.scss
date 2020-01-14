@@ -1,0 +1,41 @@
+.bottom{
+    width: 1190px;
+    height: 236px;
+    background: #000;
+    margin: 0 auto;
+    border-top: 2px solid #FF0036;
+    overflow: hidden;
+    .ul_1{
+        width: 1190px;
+        height: 35px;
+        line-height: 35px;
+        color: #fff;
+        font-size: 12px;
+        a{
+            float: left;
+            margin-right: 5px;
+            color: #fff;
+        }
+        span{
+            float: left;
+        }
+    }
+    div{
+        font-size: 12px;
+        height: 20px;
+        color: #ccc;
+        float: left;
+        margin-right: 65px;
+        line-height: 20px;
+        a{
+            color: #ccc;
+        }
+    }
+    p{
+        color: #333;
+        width: 1190px;
+        float: left;
+        line-height: 20px;
+        font-size: 12px;
+    }
+}

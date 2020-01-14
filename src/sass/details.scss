@@ -1,0 +1,138 @@
+.center_name{
+    width: 100%;
+    border-top: 1px solid #000;
+    article{
+        width: 1200px;
+        height: 800px;
+        padding-top: 50px;
+        margin: 0 auto;
+    }
+    .left{
+        width: 400px;
+        height: 600px;
+        position: relative;
+        float: left;
+        .xt{
+            width: 400px;
+            height: 400px;
+            border: 1px solid #ccc;
+            .xf{
+                width: 50px;
+                height: 50px;
+                background: lightgreen;
+            }
+        }
+        .dt{
+            width: 550px;
+            height: 550px;
+            border: 1px solid red;
+            position: absolute;
+            top: 0;
+            left: 420px;
+            display: none;
+            .df{
+                width: 100px;
+                height: 100px;
+                background: lightseagreen;
+            }
+        }
+        .lbt{
+            margin-top: 20px;
+            width: 400px;
+            height: 72px;
+            span{
+                display: block;
+                float: left;
+                width: 19px;
+                height: 70px;
+                border: 1px solid #ccc;
+                line-height: 72px;
+                font-size: 20px;
+                text-align: center;
+                color: #999;
+            }
+            li{
+                width: 72px;
+                height: 72px;
+                border: 1px solid #ccc;
+                float: left;
+            }
+        }
+    }
+    .right{
+        width: 500px;
+        height: 400px;
+        padding: 0px 20px;
+        float: left;
+        .title{
+            width: 350px;
+            height: 80px;
+            background: lightseagreen;
+            margin: 0 auto;
+            line-height: 40px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .price{
+            width: 350px;
+            height: 40px;
+            background: #ccc;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 40px;
+            font-size: 22px;
+            color: orangered;
+        }
+        .num{
+            width: 350px;
+            height: 50px;
+            margin: 0 auto;
+            padding-top: 10px;;
+            input{
+                width: 30px;
+                height: 30px;
+                border: 1px solid #ccc;
+                border: none;
+                font-size: 20px;
+                text-align: center;
+                line-height: 30px;
+            }
+            button{
+                width: 10px;
+                height: 30px;
+                text-align: center;
+                line-height: 30px;
+            }
+        }
+        .close{
+            width: 400px;
+            height: 60px;
+            margin: 0 auto;
+            padding-left: 40px;;
+            padding-top: 10px;
+            a{
+                display: block;
+                width: 150px;
+                height: 40px;
+                float: left;
+                text-align: center;
+                line-height: 40px;
+                font-size: 18px;
+                margin: 5px;
+            }
+            .a1{
+                color: orangered;
+                background: pink;
+                border: 1px solid red;
+            }
+            a:hover{
+                opacity: 0.8;
+            }
+            .a2{
+                color: #fff;
+                background: red;
+            }
+        }
+        
+    }
+}
