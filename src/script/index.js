@@ -57,7 +57,7 @@ class renderTmallsurp {
                 if(index<6){
 
                     $strhtml += `
-                    <a href="" class="a_name">
+                    <a class="a_name" href="http://localhost/TMALL1912/src/details.html?sid=${value.sid}">
                     <img src="${value.url}">
                     <p>${value.title}</p>
                     <p>￥${value.price}</p>
@@ -91,7 +91,7 @@ class renderTmallHK {
                 if(index<7){
 
                     $strhtml += `
-                    <a href="" class="a_name">
+                    <a class="a_name" href="http://localhost/TMALL1912/src/details.html?sid=${value.sid}">
                     <img src="${value.url}">
                     <p>${value.title}</p>
                     <p>￥${value.price}</p>
@@ -125,7 +125,7 @@ class renderBeauty {
                 if(index<8){
 
                     $strhtml += `
-                    <a href="" class="a_name">
+                    <a class="a_name" href="http://localhost/TMALL1912/src/details.html?sid=${value.sid}">
                     <img src="${value.url}">
                     <p>${value.title}</p>
                     <p>￥${value.price}</p>
@@ -157,7 +157,7 @@ class renderDamp {
             $.each(data, function (index, value) {
                 if(index<8){
                     $strhtml += `
-                    <a href="" class="a_name">
+                    <a class="a_name" href="http://localhost/TMALL1912/src/details.html?sid=${value.sid}">
                     <img src="${value.url}">
                     <p>${value.title}</p>
                     <p>￥${value.price}</p>
@@ -189,7 +189,7 @@ class renderFamily  {
             $.each(data, function (index, value) {
                 if(index<8){
                     $strhtml += `
-                    <a href="" class="a_name">
+                    <a class="a_name" href="http://localhost/TMALL1912/src/details.html?sid=${value.sid}">
                     <img src="${value.url}">
                     <p>${value.title}</p>
                     <p>￥${value.price}</p>
@@ -221,7 +221,7 @@ class renderLove  {
             $.each(data, function (index, value) {
                 if(index<8){
                     $strhtml += `
-                    <a href="" class="a_name">
+                    <a class="a_name" href="http://localhost/TMALL1912/src/details.html?sid=${value.sid}">
                     <img src="${value.url}">
                     <p>${value.title}</p>
                     <p>￥${value.price}</p>
@@ -253,7 +253,7 @@ class renderOutdoors  {
             $.each(data, function (index, value) {
                 if(index<8){
                     $strhtml += `
-                    <a href="" class="a_name">
+                    <a class="a_name" href="http://localhost/TMALL1912/src/details.html?sid=${value.sid}">
                     <img src="${value.url}">
                     <p>${value.title}</p>
                     <p>￥${value.price}</p>
@@ -284,7 +284,7 @@ class renderGuess  {
             $.each(data, function (index, value) {
                 if(index<65){
                     $strhtml += `
-                    <a href="" class="a_name">
+                    <a class="a_name" href="http://localhost/TMALL1912/src/details.html?sid=${value.sid}">
                     <img src="${value.url}">
                     <p>${value.title}</p>
                     <p>￥${value.price}</p>

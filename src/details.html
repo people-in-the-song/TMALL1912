@@ -7,20 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="./stylesheets/index.css">
     <link rel="stylesheet" href="./stylesheets/details.css">
+    <script src="script/require.js" defer async="true" id="current" data-main="script/main.js"
+        target-page="script/details.js"></script>
 </head>
 <body>
-    
-    <div id="location">
-        <div class="BG">
-            <img src="imges/logo.png" alt="">
-            <form action="">
-                <div>
-                    <input type="text" value="搜索&nbsp;天猫&nbsp;商品/品牌/店铺">
-                    <button>搜索</button>
-                </div>
-            </form>
-        </div>
-    </div>
     <div id="top">
         <header><img src="http://img.alicdn.com/tfs/TB1.VCptAL0gK0jSZFtXXXQCXXa-990-80.jpg" alt=""></header>
     </div>
@@ -132,37 +122,28 @@
         <article>
            <div class="left">
             <div class="xt">
+                <img src="" alt="">
                 <div class="xf"></div>
             </div>
             <div class="lbt">
-                <ul>
-                    <span>&lt;</span>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <span>&gt;</span>
-                </ul>
             </div>
-            <div class="dt">
-                <div class="df">
-                </div>
+            <div class="df">
+                <img src="" alt="" id='dt'>
             </div>
         </div> 
         <div class="right">
-            <div class="title">1111sadasdas第三方士大夫da</div>
+            <div class="title"></div>
             <div class="price">
                 <span>￥198</span>
             </div>
             <div class="num">数量：
-                <button>&lt;</button>
-                <input type="text" value="99">
-                <button>&gt;</button>
+                <button class="butLeft">&lt;</button>
+                <input type="text" value='1'>
+                <button class="butRight">&gt;</button>
             </div>
             <div class="close">
-                <a class="a1" href="">立即购买</a>
-                <a class="a2" href="">加入购物车</a>
+                <a class="a1" href="http://localhost/TMALL1912/src/cartlist.html">立即购买</a>
+                <a class="a2" href="http://localhost/TMALL1912/src/cartlist.html">加入购物车</a>
             </div>
             
         </div>

@@ -514,7 +514,6 @@ body #stairs {
   position: Fixed;
   left: 3%;
   top: 25%;
-  display: none;
 }
 /* line 76, ../sass/index.scss */
 body #stairs .BG {
@@ -1686,6 +1685,11 @@ body #stairs .BG .a3 {
 }
 
 /* line 1087, ../sass/index.scss */
+#outdoors .title-name span {
+  width: 100%;
+}
+
+/* line 1093, ../sass/index.scss */
 #guess h2 {
   width: 1230px;
   height: 43px;
@@ -1693,7 +1697,7 @@ body #stairs .BG .a3 {
   text-align: center;
 }
 
-/* line 1093, ../sass/index.scss */
+/* line 1099, ../sass/index.scss */
 .div_bottom {
   width: 1230px;
   margin: 0 auto;
@@ -1702,7 +1706,7 @@ body #stairs .BG .a3 {
   justify-content: space-around;
   align-self: center;
 }
-/* line 1100, ../sass/index.scss */
+/* line 1106, ../sass/index.scss */
 .div_bottom div {
   width: 240px;
   height: 320px;
@@ -1710,13 +1714,13 @@ body #stairs .BG .a3 {
   margin-bottom: 10px;
 }
 
-/* line 1107, ../sass/index.scss */
+/* line 1113, ../sass/index.scss */
 .miao {
   width: 80px;
   height: 45px;
   margin: 0 auto;
 }
-/* line 1111, ../sass/index.scss */
+/* line 1117, ../sass/index.scss */
 .miao span {
   font-size: 30px;
   text-align: center;
@@ -1724,7 +1728,7 @@ body #stairs .BG .a3 {
   color: #ccc;
 }
 
-/* line 1120, ../sass/index.scss */
+/* line 1126, ../sass/index.scss */
 .div_name08 a {
   display: block;
   width: 236px;
@@ -1733,14 +1737,14 @@ body #stairs .BG .a3 {
   background: #fff;
   margin: 7px 0;
 }
-/* line 1126, ../sass/index.scss */
+/* line 1132, ../sass/index.scss */
 .div_name08 a img {
   width: 185px;
   height: 185px;
   border: 1px solid #ccc;
   margin: 25px 0 0 25px;
 }
-/* line 1132, ../sass/index.scss */
+/* line 1138, ../sass/index.scss */
 .div_name08 a p:nth-child(2) {
   width: 200px;
   height: 40px;
@@ -1751,24 +1755,24 @@ body #stairs .BG .a3 {
   color: #333;
   overflow: hidden;
 }
-/* line 1142, ../sass/index.scss */
+/* line 1148, ../sass/index.scss */
 .div_name08 a p:nth-child(3) {
   font-size: 18px;
   color: #FF0036;
   line-height: 18px;
   text-align: center;
 }
-/* line 1150, ../sass/index.scss */
+/* line 1156, ../sass/index.scss */
 .div_name08 a:nth-child(2), .div_name08 a:nth-child(3), .div_name08 a:nth-child(4), .div_name08 a:nth-child(5), .div_name08 a:nth-child(7), .div_name08 a:nth-child(8), .div_name08 a:nth-child(9), .div_name08 a:nth-child(10), .div_name08 a:nth-child(12), .div_name08 a:nth-child(13), .div_name08 a:nth-child(14), .div_name08 a:nth-child(15), .div_name08 a:nth-child(17), .div_name08 a:nth-child(18), .div_name08 a:nth-child(19), .div_name08 a:nth-child(20), .div_name08 a:nth-child(22), .div_name08 a:nth-child(23), .div_name08 a:nth-child(24), .div_name08 a:nth-child(25), .div_name08 a:nth-child(27), .div_name08 a:nth-child(28), .div_name08 a:nth-child(29), .div_name08 a:nth-child(30), .div_name08 a:nth-child(32), .div_name08 a:nth-child(33), .div_name08 a:nth-child(34), .div_name08 a:nth-child(35), .div_name08 a:nth-child(37), .div_name08 a:nth-child(38), .div_name08 a:nth-child(39), .div_name08 a:nth-child(40), .div_name08 a:nth-child(42), .div_name08 a:nth-child(43), .div_name08 a:nth-child(44), .div_name08 a:nth-child(45), .div_name08 a:nth-child(47), .div_name08 a:nth-child(48), .div_name08 a:nth-child(49), .div_name08 a:nth-child(50), .div_name08 a:nth-child(52), .div_name08 a:nth-child(53), .div_name08 a:nth-child(54), .div_name08 a:nth-child(55), .div_name08 a:nth-child(57), .div_name08 a:nth-child(58), .div_name08 a:nth-child(59), .div_name08 a:nth-child(60), .div_name08 a:nth-child(62), .div_name08 a:nth-child(63), .div_name08 a:nth-child(64), .div_name08 a:nth-child(65) {
   margin-left: 12.5px;
 }
-/* line 1153, ../sass/index.scss */
+/* line 1159, ../sass/index.scss */
 .div_name08 a:hover {
   border: 1px solid red;
   opacity: 0.8;
 }
 
-/* line 1161, ../sass/index.scss */
+/* line 1167, ../sass/index.scss */
 footer {
   width: 100%;
   border-top: 1px solid #ccc;
@@ -1780,7 +1784,7 @@ footer {
   margin: 0 auto;
   overflow: hidden;
 }
-/* line 1167, ../sass/index.scss */
+/* line 1173, ../sass/index.scss */
 footer .img_2 {
   width: 1420px;
   height: 300px;
@@ -1788,27 +1792,27 @@ footer .img_2 {
   position: absolute;
   bottom: 0;
 }
-/* line 1178, ../sass/index.scss */
+/* line 1184, ../sass/index.scss */
 footer .top {
   width: 1190px;
   height: 100px;
   margin: 30px auto;
 }
-/* line 1182, ../sass/index.scss */
+/* line 1188, ../sass/index.scss */
 footer .top article {
   width: 290px;
   height: 100px;
   float: left;
   margin-left: 7px;
 }
-/* line 1187, ../sass/index.scss */
+/* line 1193, ../sass/index.scss */
 footer .top article div {
   width: 100px;
   height: 100px;
   overflow: hidden;
   float: left;
 }
-/* line 1192, ../sass/index.scss */
+/* line 1198, ../sass/index.scss */
 footer .top article div .p_quan {
   width: 50px;
   height: 50px;
@@ -1821,58 +1825,58 @@ footer .top article div .p_quan {
   color: red;
   line-height: 44px;
 }
-/* line 1205, ../sass/index.scss */
+/* line 1211, ../sass/index.scss */
 footer .top article p {
   width: 190px;
   height: 20px;
   float: left;
 }
-/* line 1210, ../sass/index.scss */
+/* line 1216, ../sass/index.scss */
 footer .top article .p1 {
   font-size: 18px;
   font-weight: 800;
   margin-top: 30px;
   color: #666;
 }
-/* line 1216, ../sass/index.scss */
+/* line 1222, ../sass/index.scss */
 footer .top article .p2 {
   font-size: 16px;
   color: #999;
   margin-top: 5px;
 }
-/* line 1223, ../sass/index.scss */
+/* line 1229, ../sass/index.scss */
 footer .center {
   width: 1190px;
   height: 213px;
   border-top: 1px solid #000;
   margin: 0 auto;
 }
-/* line 1228, ../sass/index.scss */
+/* line 1234, ../sass/index.scss */
 footer .center .name {
   margin-top: 20px;
   height: 193px;
   width: 100%;
 }
-/* line 1232, ../sass/index.scss */
+/* line 1238, ../sass/index.scss */
 footer .center .name ul {
   width: 186px;
   height: 100%;
   margin-left: 50px;
   float: left;
 }
-/* line 1237, ../sass/index.scss */
+/* line 1243, ../sass/index.scss */
 footer .center .name ul li:nth-child(1) {
   font-size: 16px;
   font-weight: 800;
   color: #646464;
 }
-/* line 1242, ../sass/index.scss */
+/* line 1248, ../sass/index.scss */
 footer .center .name ul a {
   font-size: 12px;
   color: #646464;
   line-height: 20px;
 }
-/* line 1247, ../sass/index.scss */
+/* line 1253, ../sass/index.scss */
 footer .center .name ul img {
   width: 105px;
   height: 105px;

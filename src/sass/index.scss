@@ -72,7 +72,7 @@ body{
         position: Fixed;
         left: 3%;
         top: 25%;
-        display: none;
+        // display: none;
         .BG{
             font-size: 12px;
             text-align: center;
@@ -1083,6 +1083,12 @@ body{
 #outdoors .left_name{
     position: relative;
 }
+#outdoors .title-name{
+    span{
+       width: 100%;
+    }
+    
+}
 //猜你喜欢
 #guess h2{
     width: 1230px;
@@ -1252,7 +1258,6 @@ footer{
         }
     }
 }
-//定位搜索框
 
 
 
