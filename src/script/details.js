@@ -144,10 +144,6 @@ class Details {
     }
 }
 
-define([], function () {
-    return {
-        init: function () {
-            new Details().init();
-        }
-    }
-})
+export{
+    Details
+}

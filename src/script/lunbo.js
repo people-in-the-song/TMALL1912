@@ -13,9 +13,7 @@ class Lunbo{
                 //利用索引思维
                 this.index = i;//索引存储下来了
                 this.tabswitch();
-               
             } 
-            
         }
         this.autoplay();
     }
@@ -41,4 +39,6 @@ class Lunbo{
         },6000);
     }
 }
-new Lunbo().init();
+export{
+    Lunbo,
+}

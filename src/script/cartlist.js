@@ -15,6 +15,7 @@ class CartList {
                 this.render(csid[i], cnum[i]);
             }
         }
+        // this.render();
         
     }
     render(sid, num) {
@@ -46,10 +47,14 @@ class CartList {
     });
     }
 }
-define([], function () {
-    return {
-        init: function () {
-            new CartList().init();
-        }
-    }
-})
+// define([], function () {
+//     return {
+//         init: function () {
+//             new CartList().init();
+//         }
+//     }
+// })
+
+// export{
+//     CartList
+// }

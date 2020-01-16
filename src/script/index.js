@@ -1,11 +1,30 @@
-class Lunbo {
+class Index {
     constructor() {
         this.Imgs = document.querySelectorAll('#slideshow .BG img');
         this.list = document.querySelectorAll('#slideshow ul li');
         this.index = 0;
         this.tamer = null
+
+        //天猫超市渲染
+        this.$div_name = $('.div_name01');
+        //天猫国际
+        this.$div_name2 = $('.div_name02');
+        //美丽人生
+        this.$div_name3 = $('.div_name03');
+        //潮店酷玩
+        this.$div_name4 = $('.div_name04');
+        //居家生活
+        this.$div_name5 = $('.div_name05');
+        //打造爱巢
+        this.$div_name6 = $('.div_name06');
+        //户外出行
+        this.$div_name7 = $('.div_name07');
+        //猜你喜欢
+        this.$div_name8 = $('.div_name08');
+
     }
     init() {
+        console.log(1)
         for (let i = 0; i < this.list.length; i++) {
             this.list[i].onmouseover = () => {
                 //利用索引思维
@@ -16,6 +35,15 @@ class Lunbo {
 
         }
         this.autoplay();
+        this.random_shopping();
+        this.random_TmallHK();
+        this.random_Beauty();
+        this.random_Damp();
+        this.random_Family();
+        this.random_Love();
+        this.random_Outdoors();
+        this.random_Guess();
+        this.random_Location();
     }
     tabswitch() {
         for (let j = 0; j < this.list.length; j++) {
@@ -37,15 +65,8 @@ class Lunbo {
             }
         }, 6000);
     }
-}
 
-//http://10.31.152.36/TMALL1912/php/adddata.php
-//天猫超市渲染
-class renderTmallsurp {
-    constructor() {
-        this.$div_name = $('.div_name01');
-    }
-    init() {
+    random_shopping(){
         $.ajax({
             url: 'http://localhost/TMALL1912/php/adddata.php',
             dataType: 'json',
@@ -72,14 +93,8 @@ class renderTmallsurp {
             this.$div_name.html($strhtml);
         });
     }
-}
-//天猫国际
-class renderTmallHK {
-    constructor() {
-        this.$div_name = $('.div_name02');
-    }
-
-    init() {
+    //天猫国际
+    random_TmallHK(){
         $.ajax({
             url: 'http://localhost/TMALL1912/php/adddata.php',
             dataType: 'json',
@@ -103,17 +118,11 @@ class renderTmallHK {
                 
             });
             $strhtml += '</article>';
-            this.$div_name.html($strhtml);
+            this.$div_name2.html($strhtml);
         });
     }
-}
-//美丽人生
-class renderBeauty {
-    constructor() {
-        this.$div_name = $('.div_name03');
-    }
-
-    init() {
+    //美丽人生
+    random_Beauty(){
         $.ajax({
             url: 'http://localhost/TMALL1912/php/adddata.php',
             dataType: 'json',
@@ -137,16 +146,11 @@ class renderBeauty {
                 
             });
             $strhtml += '</article>';
-            this.$div_name.html($strhtml);
+            this.$div_name3.html($strhtml);
         });
     }
-}
-//潮店酷玩
-class renderDamp {
-    constructor() {
-        this.$div_name = $('.div_name04');
-    }
-    init() {
+    //潮店酷玩
+    random_Damp(){
         $.ajax({
             url: 'http://localhost/TMALL1912/php/adddata.php',
             dataType: 'json',
@@ -169,16 +173,11 @@ class renderDamp {
                 
             });
             $strhtml += '</article>';
-            this.$div_name.html($strhtml);
+            this.$div_name4.html($strhtml);
         });
     }
-}
-//居家生活
-class renderFamily  {
-    constructor() {
-        this.$div_name = $('.div_name05');
-    }
-    init() {
+    //居家生活
+    random_Family(){
         $.ajax({
             url: 'http://localhost/TMALL1912/php/adddata.php',
             dataType: 'json',
@@ -201,16 +200,11 @@ class renderFamily  {
                 
             });
             $strhtml += '</article>';
-            this.$div_name.html($strhtml);
+            this.$div_name5.html($strhtml);
         });
     }
-}
-//打造爱巢
-class renderLove  {
-    constructor() {
-        this.$div_name = $('.div_name06');
-    }
-    init() {
+    //打造爱巢
+    random_Love(){
         $.ajax({
             url: 'http://localhost/TMALL1912/php/adddata.php',
             dataType: 'json',
@@ -233,16 +227,11 @@ class renderLove  {
                 
             });
             $strhtml += '</article>';
-            this.$div_name.html($strhtml);
+            this.$div_name6.html($strhtml);
         });
     }
-}
-//户外出行
-class renderOutdoors  {
-    constructor() {
-        this.$div_name = $('.div_name07');
-    }
-    init() {
+    //户外出行
+    random_Outdoors(){
         $.ajax({
             url: 'http://localhost/TMALL1912/php/adddata.php',
             dataType: 'json',
@@ -265,15 +254,11 @@ class renderOutdoors  {
                 
             });
             $strhtml += '</article>';
-            this.$div_name.html($strhtml);
+            this.$div_name7.html($strhtml);
         });
     }
-}
-class renderGuess  {
-    constructor() {
-        this.$div_name = $('.div_name08');
-    }
-    init() {
+    //猜你喜欢
+    random_Guess(){
         $.ajax({
             url: 'http://localhost/TMALL1912/php/adddata.php',
             dataType: 'json',
@@ -296,15 +281,11 @@ class renderGuess  {
                 
             });
             $strhtml += '</article>';
-            this.$div_name.html($strhtml);
+            this.$div_name8.html($strhtml);
         });
     }
-}
-//悬浮搜索框
-class Location{
-    constructor(){
-    }
-    init(){
+    //悬浮搜索框
+    random_Location(){
         $(window).on('scroll', function () {
             let $top = $(window).scrollTop();
             if ($top >= 1000) {
@@ -319,19 +300,7 @@ class Location{
         });
     }
 }
-define([], function () {
-    return {
-        init: function () {
-            new Lunbo().init();
-            new renderTmallsurp().init();
-            new renderTmallHK().init();
-            new renderBeauty().init();
-            new renderDamp().init();
-            new renderFamily().init();
-            new renderLove().init();
-            new renderOutdoors().init();
-            new renderGuess().init();
-            new Location().init();
-        }
-    }
-});
+export{
+    Index,
+}
+
