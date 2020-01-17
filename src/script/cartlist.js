@@ -7,10 +7,10 @@ class CartList {
     }
     init() {
         if (localStorage.getItem('cartsid') && localStorage.getItem('cartnum')) {
-            console.log(localStorage.getItem('cartsid').split(','));
-            console.log(localStorage.getItem('cartnum').split(','));
             let csid = localStorage.getItem('cartsid').split(','); //sid
             let cnum = localStorage.getItem('cartnum').split(','); //数量
+            console.log(localStorage.getItem('cartsid').split(','));
+            console.log(localStorage.getItem('cartnum').split(','));
             for (let i = 0; i < csid.length; i++) {
                 this.render(csid[i], cnum[i]);
             }
@@ -28,33 +28,18 @@ class CartList {
         
         $.each(data, (index, value) => {
            if(sid==value.sid){
+            console.log(sid)
             let $clonebox = $('.content:hidden').clone(true, true);
             $clonebox.find('.content img').attr('src', value.url);
             $clonebox.show();
             console.log(1)
-            // $clonebox.find('.goods-pic img').attr('src', value.url);
-            // $clonebox.find('.goods-pic img').attr('sid', value.sid);
-            // $clonebox.find('.goods-d-info a').html(value.title);
-            // $clonebox.find('.b-price strong').html(value.price);
-            // $clonebox.find('.quantity-form input').val(num);
-            // $clonebox.find('.b-sum strong').html((value.price * num).toFixed(2));
-            // $clonebox.show();
-            // $('.item-list').append($clonebox);
-            // this.allprice();
            }
         });
 
     });
     }
 }
-// define([], function () {
-//     return {
-//         init: function () {
-//             new CartList().init();
-//         }
-//     }
-// })
 
-// export{
-//     CartList
-// }
+export{
+    CartList
+}

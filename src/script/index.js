@@ -21,10 +21,13 @@ class Index {
         this.$div_name7 = $('.div_name07');
         //猜你喜欢
         this.$div_name8 = $('.div_name08');
+        //楼梯效果
+        this.$stairs=$('#stairs a');//
+        this.$a3=$('#stairs .a3');//回到顶部按钮
+
 
     }
     init() {
-        console.log(1)
         for (let i = 0; i < this.list.length; i++) {
             this.list[i].onmouseover = () => {
                 //利用索引思维
@@ -44,6 +47,7 @@ class Index {
         this.random_Outdoors();
         this.random_Guess();
         this.random_Location();
+        this.random_stairs();
     }
     tabswitch() {
         for (let j = 0; j < this.list.length; j++) {
@@ -298,6 +302,70 @@ class Index {
                 });
             }
         });
+    }
+    random_stairs(){
+        $('#stairs a').not('.a3,.a1').on('click',function(){
+            let $top = $('.louceng').eq($(this).index()-1).offset().top-100; //和楼梯对应的楼层的top值。
+            $('html').animate({
+                scrollTop: $top
+            });
+        })
+        this.$a3.on('click',()=>{
+            $('html').animate({
+                scrollTop:0
+            })
+        });
+        let $top=$(window).scrollTop();
+        $(window).on('scroll',()=>{
+            let $top=$(window).scrollTop();
+            if($top>=600){
+                $('#stairs').show();
+            }else{
+                $('#stairs').hide();
+            }
+            if($top>1800&&$top<=2500){
+                $('#stairs .a2_name').css('background','lightgreen');
+            }else{
+                $('#stairs .a2_name').css('background','#666');
+            }
+            if($top>2500&&$top<=3200){
+                $('#stairs .a3_name').css('background','#000')
+            }else{
+                $('#stairs .a3_name').css('background','#666');
+            }
+            if($top>3200&&$top<=4000){
+                $('#stairs .a4_name').css('background','pink')
+            }else{
+                $('#stairs .a4_name').css('background','#666');
+            }
+            if($top>4000&&$top<=4700){
+                $('#stairs .a5_name').css('background','#0AA6E8')
+            }else{
+                $('#stairs .a5_name').css('background','#666');
+            }
+            if($top>4700&&$top<=5500){
+                $('#stairs .a6_name').css('background','lightgreen')
+            }else{
+                $('#stairs .a6_name').css('background','#666');
+            }
+            if($top>5500&&$top<=6200){
+                $('#stairs .a7_name').css('background','#000')
+            }else{
+                $('#stairs .a7_name').css('background','#666');
+            }
+            if($top>6200&&$top<=7000){
+                $('#stairs .a8_name').css('background','pink')
+            }else{
+                $('#stairs .a8_name').css('background','#666');
+            }
+            if($top>7000){
+                $('#stairs .a9_name').css('background','#0AA6E8')
+            }else{
+                $('#stairs .a9_name').css('background','#666');
+            }
+        })
+       
+
     }
 }
 export{

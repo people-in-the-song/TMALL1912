@@ -8,17 +8,19 @@ import "jquery";
 import{
     Index,
 }from'./index.js';
-// import{
-//     Cartlist,
-// }from'./cartlist.js';
-
-import{
-    Lunbo,
-}from'./lunbo.js';
 import{
     Details,
 }from'./details.js';
+import{
+    Cartlist
+}from'./cartlist.js';
 
-// new CartList().init();//使用渲染模块
-new Index().init();//使用渲染模块
-new Details().init();
+
+let currentPage = $('#current');
+if(currentPage.attr('page') === 'index'){
+    new Index().init();//首页
+}else if(currentPage.attr('page') === 'detail'){
+    new Details().init();//详情页
+}else if(currentPage.attr('page')==='cartlist'){
+    new CartList().init();//购物车
+}

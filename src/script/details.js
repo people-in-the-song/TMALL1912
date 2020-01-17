@@ -119,8 +119,6 @@ class Details {
     addcart() {
         let goodsnum = []; //商品的数量
         let goodsid = []; //商品的编号
-        console.log(this.$num.val())
-        //cartnum  cartsid:本地存储的key值
         function getcookie() {
             if (localStorage.getItem('cartnum') && localStorage.getItem('cartsid')) {
                 goodsnum = localStorage.getItem('cartnum').split(',');
